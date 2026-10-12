@@ -1,0 +1,96 @@
+ROAD ACCIDENT DATA ANALYSIS AND SEVERITY INSIGHTS
+============================================================
+Dataset: UK Department for Transport collision data, 2025
+Analysis type: Data Science and Exploratory Data Analysis
+No machine-learning model or prediction is used.
+
+Original number of records: 101,525
+Number of columns: 44
+
+DATASET OVERVIEW
+------------------------------------------------------------
+Rows: 101,525
+Columns: 44
+Total missing cells: 8
+
+DATA QUALITY
+------------------------------------------------------------
+Duplicate rows detected: 0
+Duplicate rows removed: 0
+Records after duplicate removal: 101,525
+
+COLLISION SEVERITY
+------------------------------------------------------------
+Slight: 74,881 collisions (73.76%)
+Serious: 25,191 collisions (24.81%)
+Fatal: 1,453 collisions (1.43%)
+
+DAY OF WEEK ANALYSIS
+------------------------------------------------------------
+Day with most recorded collisions: Friday (16,811)
+Day with fewest recorded collisions: Sunday (11,197)
+
+TIME OF DAY ANALYSIS
+------------------------------------------------------------
+Hour with most recorded collisions: 17:00 (8,877)
+
+MONTHLY ANALYSIS
+------------------------------------------------------------
+Month with most recorded collisions: November (9,188)
+Month with fewest recorded collisions: February (7,155)
+
+ROAD TYPE ANALYSIS
+------------------------------------------------------------
+Most frequent recorded road type:
+6 (74150)
+
+SPEED LIMIT ANALYSIS
+------------------------------------------------------------
+Collision counts by speed limit are saved in the outputs folder.
+
+WEATHER ANALYSIS
+------------------------------------------------------------
+Most frequent weather category in the data: 1 (83,405)
+
+VEHICLE AND CASUALTY SUMMARY
+------------------------------------------------------------
+Average vehicles per recorded collision: 1.81
+Total casualties represented by the collision records: 127,883
+Average casualties per recorded collision: 1.26
+
+NUMERICAL CORRELATION
+------------------------------------------------------------
+Correlation values describe statistical relationships; they do not establish causation.
+
+LOCATION ANALYSIS
+------------------------------------------------------------
+Records with usable coordinates within the approximate Great Britain bounding area: 101,523
+Highest-count rounded coordinate cell: latitude 51.51, longitude -0.13, 123 collisions.
+Location concentrations use rounded coordinates and are approximate, not official road-junction hotspot boundaries.
+The map uses a heat layer based on a sample of up to 20,000 valid collision coordinates and individual markers sampled from up to 1,500 collisions.
+
+OUTPUT FILES
+------------------------------------------------------------
+dataset_overview.csv
+missing_values_report.csv
+missing_values_after_cleaning.csv
+cleaned_collision_data.csv
+collision_severity_counts.csv
+collisions_by_weekday.csv
+collisions_by_hour.csv
+collisions_by_month.csv
+weather_by_severity.csv and percentage table
+road_surface_by_severity.csv and percentage table
+speed_limit_by_severity.csv and percentage table
+numerical_correlation_matrix.csv
+approximate_location_concentrations.csv
+accident_location_map.html
+Charts are saved in the outputs/charts folder.
+
+LIMITATIONS
+------------------------------------------------------------
+The dataset covers reported personal-injury collisions recorded by police; it does not represent every road incident.
+Missing values are reported, not automatically imputed.
+Several categorical fields may be numeric codes. Consult the official data guide before assigning descriptions to those codes.
+Collision counts alone do not measure risk because traffic volume and distance travelled are not included in this analysis.
+Observed associations do not prove that a particular condition caused a collision.
