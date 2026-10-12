@@ -47,14 +47,6 @@ Precision, recall and F1 are for the severe class on the 18,845 test collisions.
 - Most important model inputs: number of vehicles, hour, month, speed limit and junction detail.
 - The three models perform similarly and only moderately (about 57% to 63% accuracy). Severity depends on details not in this dataset, such as vehicle type, driver age and impact speed. These are associations in the data, not proof of cause.
 
-### Sample Charts
-
-If the `project_output` folder is uploaded, these images show on GitHub:
-
-![Collisions by hour](project_output/2_hour.png)
-![Severe collisions by speed limit](project_output/5_speed_limit.png)
-![Model comparison](project_output/8_model_comparison.png)
-
 ## How to Run
 
 1. Download or clone this repository.
